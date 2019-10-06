@@ -1,0 +1,138 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+* a {
+  text-decoration: none; }
+
+* p {
+  margin: 0; }
+
+* ul {
+  padding: 0; }
+
+.header {
+  width: 100%;
+  height: 83px;
+  background: #131313; }
+
+.offer {
+  width: 100%;
+  height: 755px;
+  display: flex;
+  position: relative;
+  background: #131313; }
+  .offer .content {
+    flex-basis: 1358px;
+    background: url("../../source/assets/images/offer/offer-background.png");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat; }
+  .offer .instagram {
+    flex-basis: 82px;
+    height: 100%;
+    background: #131313;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center; }
+    .offer .instagram-link {
+      display: block;
+      font-family: FuturaDemiC;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #e3b873;
+      transform: rotate(90deg); }
+  .offer .scroll-down {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 247px;
+    height: 97px;
+    background: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .offer .scroll-down--link {
+      color: #fff;
+      font-family: Yeseva One;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase; }
+
+.completed-projects {
+  width: 100%;
+  height: 611px;
+  background: #131313;
+  display: flex;
+  flex-wrap: wrap; }
+  .completed-projects .wrapper-navbar {
+    flex-basis: 100%;
+    height: 129px;
+    display: flex;
+    justify-content: flex-end; }
+    .completed-projects .wrapper-navbar .navbar {
+      flex-basis: 50%;
+      width: 623px; }
+      .completed-projects .wrapper-navbar .navbar .menu {
+        display: flex;
+        justify-content: space-between; }
+        .completed-projects .wrapper-navbar .navbar .menu--item {
+          display: inline;
+          font-family: Yeseva One;
+          font-size: 14px;
+          line-height: 19px;
+          text-transform: uppercase; }
+        .completed-projects .wrapper-navbar .navbar .menu--link {
+          color: rgba(255, 255, 255, 0.3); }
+        .completed-projects .wrapper-navbar .navbar .menu--link-active {
+          color: #e3b873; }
+  .completed-projects .description-block {
+    flex-basis: 40%; }
+    .completed-projects .description-block .text-content {
+      width: 442px;
+      height: 390px;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .completed-projects .description-block .text-content .heading {
+        height: 66px;
+        font-family: Yeseva One;
+        font-size: 27px;
+        line-height: 37px;
+        letter-spacing: -0.07em;
+        text-transform: uppercase;
+        color: #e3b873; }
+      .completed-projects .description-block .text-content .description {
+        font-family: FuturaBookC;
+        font-size: 18px;
+        line-height: 29px;
+        color: #ffffff; }
+      .completed-projects .description-block .text-content .information {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        .completed-projects .description-block .text-content .information--item {
+          flex-basis: 50%; }
+        .completed-projects .description-block .text-content .information--text {
+          font-family: FuturaBookC;
+          font-size: 15px;
+          line-height: 20px;
+          color: #ffffff; }
+        .completed-projects .description-block .text-content .information--heading {
+          font-family: Yeseva One;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: #e3b873; }
+      .completed-projects .description-block .text-content .slider-control .circle-img {
+        opacity: 0.3; }
+  .completed-projects .slider {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }

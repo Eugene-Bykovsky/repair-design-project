@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Repair-design-project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="../../build/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="logo"></h1>
+        <nav class="navbar">
+          <ul class="menu">
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+          </ul>
+        </nav>
+        <a href="tel:+7(928)768-32-39">+7(928)768-32-39</a>
+        <button class="button"></button>
+      </header>
+      <main class="main">
+        <section class="offer">
+          <div class="instagram">
+            <a class="instagram-link" href="#">instagram</a>
+          </div>
+          <div class="content">
+            <p class="heading"></p>
+            <p class="description"></p>
+            <button class="calculate-cost"></button>
+            <button class="submit-application"></button>
+          </div>
+          <div class="scroll-down">
+            <a class="scroll-down--link" href="#">scroll down</a>
+            <img
+              class="scroll-down--img"
+              src="../assets/images/offer/scroll-down.svg"
+              alt="arrow-down"
+            />
+          </div>
+        </section>
+        <section class="completed-projects">
+          <div class="wrapper-navbar">
+            <nav class="navbar">
+              <ul class="menu">
+                <li class="menu--item">
+                  <a class="menu--link-active" href="#"
+                    >Rostov-on-Don, Admiral</a
+                  >
+                </li>
+                <li class="menu--item">
+                  <a class="menu--link" href="#">Sochi Thieves</a>
+                </li>
+                <li class="menu--item">
+                  <a class="menu--link" href="#">Rostov-on-Don Patriotic</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="description-block">
+            <div class="text-content">
+              <div class="heading">
+                Completed projects
+              </div>
+              <p class="description">
+                Only a small part of the work performed by our company is
+                presented on the site. For 14 years on in the construction
+                market we have made happy more than 1000 families
+              </p>
+              <div class="information">
+                <div class="information--item">
+                  <p class="information--heading">city</p>
+                  <p class="information--text">Rostov-on-Don LCD admiral</p>
+                </div>
+                <div class="information--item">
+                  <p class="information--heading">apartment area:</p>
+                  <p class="information--text">81 m2</p>
+                </div>
+                <div class="information--item">
+                  <p class="information--heading">repair time</p>
+                  <p class="information--text">3.5 months</p>
+                </div>
+                <div class="information--item">
+                  <p class="information--heading">repair cost</p>
+                  <p class="information--text">Upon request</p>
+                </div>
+              </div>
+              <div class="slider-control">
+                <img
+                  class="arrow-img"
+                  src="../assets/images/completed projects/arrow-left.svg"
+                  alt="arrow"
+                />
+                <img
+                  class="circle-img-active"
+                  src="../assets/images/completed projects/circle.svg"
+                  alt="pagination-circle"
+                />
+                <img
+                  class="circle-img"
+                  src="../assets/images/completed projects/circle.svg"
+                  alt="pagination-circle"
+                />
+                <img
+                  class="circle-img"
+                  src="../assets/images/completed projects/circle.svg"
+                  alt="pagination-circle"
+                />
+                <img
+                  class="arrow-img"
+                  src="../assets/images/completed projects/arrow-right.svg"
+                  alt="arrow"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider--item"></div>
+            <div class="slider--item"></div>
+            <button class="slider--button"></button>
+          </div>
+        </section>
+        <section class="online-control">
+          <div class="head">
+            <div class="heading">
+              online control
+            </div>
+            <div class="badge">
+              <img class="img" src="" alt="online-control-img" />
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/bTSZ15J2l04"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="separator">
+            <img src="" alt="separator" class="img-separator" />
+          </div>
+          <div class="description">
+            At each facility, a camera is installed that broadcasts the progress
+            of work on the clock. At any time, you can go to our website and
+            monitor the progress of work in your apartment. You can watch the
+            live broadcast from one of our facilities! Leave a request below and
+            you will receive a link to the broadcast.
+          </div>
+          <form class="form-access" action="">
+            <div class="form-access--name">
+              <label class="form-access--label" for=""></label>
+              <input class="form-access--input" type="text" />
+            </div>
+            <div class="form-access--phone">
+              <label class="form-access--label" for=""></label>
+              <input class="form-access--input" type="text" />
+            </div>
+            <button type="submit" class="form-access--button" disabled>
+              submit
+            </button>
+            <div class="form-access--check">
+              <input
+                class="form-access--input"
+                id="agree"
+                type="checkbox"
+                required
+              />
+              <label class="form-access--label" for="agree"
+                >I agree to the processing of personal data</label
+              >
+            </div>
+          </form>
+        </section>
+        <section class="types-of-repair">
+          <div class="head">
+            <div class="heading">
+              types of repair
+            </div>
+            <div class="badge">
+              <img class="img" src="" alt="types-of-repair-img" />
+            </div>
+          </div>
+          <div class="information">
+            <div class="information--item">
+              <div class="information--background"></div>
+              <div class="information--list"></div>
+              <button class="information--button"></button>
+            </div>
+            <div class="information--item">
+              <div class="information--background"></div>
+              <div class="information--list"></div>
+              <button class="information--button"></button>
+            </div>
+            <div class="information--item">
+              <div class="information--background"></div>
+              <div class="information--list"></div>
+              <button class="information--button"></button>
+            </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="stage"></div>
+          <div class="form">
+            <form class="form-feedback" action="">
+              <p class="form-feedback--heading">
+                Leave a request for free departure of the measurer
+              </p>
+              <div class="form-feedback--name">
+                <label class="form-feedback--label" for=""></label>
+                <input class="form-feedback--input" type="text" />
+              </div>
+              <div class="form-feedback--phone">
+                <label class="form-feedback--label" for=""></label>
+                <input class="form-feedback--input" type="text" />
+              </div>
+              <div class="form-feedback--email">
+                <label class="form-feedback--label" for=""></label>
+                <input class="form-feedback--input" type="text" />
+              </div>
+              <div class="form-feedback--check">
+                <input
+                  class="form-feedback--input"
+                  id="agree"
+                  type="checkbox"
+                  required
+                />
+                <label class="form-feedback--label" for="agree"
+                  >I agree to the processing of personal data</label
+                >
+              </div>
+              <button type="submit" class="form-feedback--button" disabled>
+                call the measurer
+              </button>
+            </form>
+          </div>
+          <div class="bank">
+            <p class="circle"></p>
+            <p class="text"></p>
+          </div>
+        </section>
+        <section class="styles">
+          <div class="text-content">
+            <p class="heading"></p>
+            <ul class="list">
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+            </ul>
+          </div>
+          <div class="images">
+            <div class="images--item"></div>
+            <div class="images--item"></div>
+            <div class="images--item"></div>
+            <div class="images--item"></div>
+          </div>
+        </section>
+        <section class="design-project">
+          <div class="head">
+            <div class="heading">
+              design project
+            </div>
+            <div class="badge">
+              <img class="img" src="" alt="design-badge-img" />
+            </div>
+            <div class="description">
+              Design project not only helps to make the repair of your apartment
+              more modern, but also significantly reduces the cost of materials
+              and reduces the time of repair work.
+            </div>
+          </div>
+          <div class="information">
+            <div class="information--item">
+              <div class="information--background"></div>
+              <div class="information--list"></div>
+              <button class="information--button"></button>
+            </div>
+            <div class="information--item">
+              <div class="information--background"></div>
+              <div class="information--list"></div>
+              <button class="information--button"></button>
+            </div>
+            <div class="information--item">
+              <div class="information--background"></div>
+              <div class="information--list"></div>
+              <button class="information--button"></button>
+            </div>
+          </div>
+        </section>
+        <section class="how-it-works">
+          <div class="text-content">
+            <div class="title"></div>
+            <div class="heading"></div>
+            <div class="description"></div>
+            <div class="slider-control">
+              <img class="img-arrow" src="" alt="arrow" />
+              <img class="img" src="" alt="pagination-circles" />
+              <img
+                class="img-pagination-circles"
+                src=""
+                alt="pagination-circles"
+              />
+              <img class="img" src="" alt="pagination-circles" />
+              <img class="img" src="" alt="pagination-circles" />
+              <img
+                class="img-pagination-circles"
+                src=""
+                alt="pagination-circles"
+              />
+              <img class="img" src="" alt="pagination-circles" />
+              <img class="img" src="" alt="arrow" />
+            </div>
+          </div>
+          <div class="slider">
+            <ul class="list">
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+              <li class="list--item"></li>
+            </ul>
+            <div class="image"></div>
+          </div>
+        </section>
+        <section class="our-team">
+          <div class="head">
+            <div class="heading">
+              our team
+            </div>
+            <div class="badge">
+              <img class="img" src="" alt="our-team-icon" />
+            </div>
+            <div class="description">
+              Our team has helped to become happier for more than 500 families
+              and we are not going to stop
+            </div>
+          </div>
+          <div class="information">
+            <div class="information--item">
+              <img class="img" src="" alt="our-team-icon" />
+              <div class="information--background"></div>
+              <div class="information--staff"></div>
+              <div class="information--experience"></div>
+            </div>
+            <div class="information--item">
+              <img class="img" src="" alt="our-team-icon" />
+              <div class="information--background"></div>
+              <div class="information--staff"></div>
+              <div class="information--experience"></div>
+            </div>
+            <div class="information--item">
+              <img class="img" src="" alt="our-team-icon" />
+              <div class="information--background"></div>
+              <div class="information--staff"></div>
+              <div class="information--experience"></div>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="summary"></div>
+        </section>
+        <section class="our-clients">
+          <div class="head">
+            <div class="heading">
+              our clients
+            </div>
+            <div class="badge">
+              <img class="img" src="" alt="our-team-icon" />
+            </div>
+            <div class="description">
+              80% of our customers recommend us to their friends and family.
+            </div>
+          </div>
+          <div class="information">
+            <div class="information--item">
+              <div class="information--client">
+                <img class="img" src="" alt="client-img" />
+                <p class="fullname"></p>
+              </div>
+              <div class="comment"></div>
+              <div class="statistics"></div>
+            </div>
+            <div class="information--item">
+              <div class="information--client">
+                <img class="img" src="" alt="client-img" />
+                <p class="fullname"></p>
+              </div>
+              <div class="comment"></div>
+              <div class="statistics"></div>
+            </div>
+            <div class="information--item">
+              <div class="information--client">
+                <img class="img" src="" alt="client-img" />
+                <p class="fullname"></p>
+              </div>
+              <div class="comment"></div>
+              <div class="statistics"></div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <form class="form-feedback" action="">
+            <p class="form-feedback--heading">
+              have any questions?
+            </p>
+            <div class="form-feedback--name">
+              <label class="form-feedback--label" for=""></label>
+              <input class="form-feedback--input" type="text" />
+            </div>
+            <div class="form-feedback--phone">
+              <label class="form-feedback--label" for=""></label>
+              <input class="form-feedback--input" type="text" />
+            </div>
+            <div class="form-feedback--email">
+              <label class="form-feedback--label" for=""></label>
+              <input class="form-feedback--input" type="text" />
+            </div>
+            <div class="form-feedback--check">
+              <input
+                class="form-feedback--input"
+                id="agree"
+                type="checkbox"
+                required
+              />
+              <label class="form-feedback--label" for="agree"
+                >I agree to the processing of personal data</label
+              >
+            </div>
+            <button type="submit" class="form-feedback--button" disabled>
+              call the measurer
+            </button>
+          </form>
+        </section>
+        <section class="contact-info">
+          <p class="address"></p>
+          <p class="tel-number"></p>
+          <p class="icons">
+            <img class="img" src="" alt="contact-info-icon" />
+            <img class="img" src="" alt="contact-info-icon" />
+          </p>
+        </section>
+        <section class="map"></section>
+      </main>
+      <footer class="footer">
+        <h1 class="logo"></h1>
+        <nav class="navbar">
+          <ul class="menu">
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+            <li class="menu--item"><a class="menu--link" href="#"></a></li>
+          </ul>
+        </nav>
+        <a href="tel:+7(928)768-32-39">+7(928)768-32-39</a>
+        <button class="button"></button>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="dist/bundle.js"></script>
+  </body>
+</html>
