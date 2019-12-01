@@ -6,3 +6,6 @@ npm-debug.log
 
 # Временные файлы
 .DS_Store
+
+# Сборка
+build

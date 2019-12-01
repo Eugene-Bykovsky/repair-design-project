@@ -1,0 +1,123 @@
+@mixin flex
+(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $grow: 0,
+  $wrap: nowrap,
+  $basis: auto
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-grow: $grow;
+  flex-wrap: $wrap;
+  flex-basis: $basis;
+}
+
+@mixin descriprion(
+  $font-family: FuturaBookC,
+  $font-size: 18px,
+  $line-height: 29px,
+  $color: #fff,
+  $text-align: left
+  ) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  text-align: $text-align;
+}
+
+@mixin form-label($color) {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  color: $color;
+}
+
+@mixin form-input($pl-color, $background: none,
+  $padding: 0 0 6px 0) {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  color: #fff;
+  padding: $padding;
+  border-bottom: 1px solid #c3c3c3;
+  background: $background;
+
+  &::placeholder {
+    color: $pl-color;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@mixin btn(
+  $background: #e3b873,
+  $border-rad: 0,
+  $width: 200px,
+  $height: 51px,
+  $font-size: 15px,
+  $font-family: FuturaDemiC,
+  $line-height: 15px) {
+  height: $height;
+  width: $width;
+  background: $background;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: $line-height;
+}
+
+@mixin badge($background, $background-before, $background-after) {
+  height: 28px;
+  width: 28px;
+  margin: 0 auto;
+  background: $background;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: $background-before;
+    background-size: contain;
+    width: 32px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 150%;
+  }
+
+  &::after {
+    content: '';
+    background: $background-after;
+    background-size: contain;
+    width: 32px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+  }
+}
+
+@mixin heading (
+  $font-family: Yeseva One,
+  $font-size: 27px,
+  $line-height: 37px,
+  $text-transform: uppercase,
+  $color: #E3B873
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  color: $color;
+}

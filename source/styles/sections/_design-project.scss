@@ -1,0 +1,133 @@
+.design-project {
+  height: 920px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(19, 19, 19, 1) 0%, rgba(19, 19, 19, 1) 430px, #fff 430px, #fff 100%);
+  @include flex($direction: column,
+      $align: center,
+      $justify: space-around);
+
+  .head {
+    @extend %head;
+  }
+
+  .heading {
+    @extend %heading;
+  }
+
+  .badge {
+      @include badge(url('../../source/assets/images/design-project/badge.svg'),
+          url('../../source/assets/images/design-project/dash.svg'),
+          url('../../source/assets/images/design-project/dash.svg'));
+  }
+
+  .description {
+      @include descriprion($color: #363636,
+          $font-size: convertPx(20),
+          $line-height: convertPx(27),
+          $text-align: center);
+  }
+
+  .information {
+      height: 608px;
+      width: 100%;
+      margin-top: 50px;
+      @include flex($justify: space-between,
+      );
+
+      &--item {
+          height: 100%;
+          margin-right: 30px;
+          background: linear-gradient(to bottom, rgba(19, 19, 19, 0.5) 0%, rgba(19, 19, 19, 0.5) 421px, rgba(19, 19, 19, 1) 421px, rgba(19, 19, 19, 1) 100%);
+          @include flex(
+              $justify: center,
+              $basis: 392px);
+      }
+
+      &--item {
+          &:first-child {
+              background: url('../../source/assets/images/design-project/mini.jpg') no-repeat;
+              .content {
+                  max-height: 211px;
+              }
+          }
+
+          &:nth-child(2) {
+              background: url('../../source/assets/images/design-project/standart.jpg') no-repeat;
+              .content {
+                max-height: 313px;
+              }
+          }
+
+          &:last-child {
+              background: url('../../source/assets/images/design-project/full.jpg') no-repeat;
+              .content {
+                max-height: 441px;
+              }
+          }
+      }
+  }
+
+  .content {
+      width: 85%;
+      transform: translateY(294px);
+      padding-top: 20px;
+      background: #ffffff;
+      @include flex(
+          $direction: column,
+          $justify: center
+      );
+
+      .heading {
+          width: 80%;
+          margin: 0 auto;
+          font-family: Yeseva One;
+          font-size: convertPx(18);
+          line-height: convertPx(25);
+          color: #363636;
+          flex-grow: 1;
+          text-transform: capitalize;
+      }
+
+      .list {
+          width: 75%;
+          margin: 0 auto;
+          flex-grow: 10;
+
+          &--item {
+              list-style-type: none;
+              position: relative;
+              color: #959595;
+              font-family: FuturaBookC;
+              font-size: convertPx(15);
+              line-height: convertPx(25);
+          }
+
+          &--item::before {
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background: #959595;
+              position: absolute;
+              top: 40%;
+              right: 102%;
+          }
+      }
+
+      .btn {
+          transform: translateY(50%);
+          @include btn ($width: 70%,
+              $height: 54px,
+              $font-family: Yeseva One,
+              $font-size: convertPx(18),
+              $line-height: convertPx(25)
+          );
+      }
+  }
+}
+
+.wrapper-design-project {
+  height: 100%;
+  width: 86%;
+  margin: 0 auto;
+}

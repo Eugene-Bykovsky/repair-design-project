@@ -1,0 +1,187 @@
+.our-clients {
+  width: 86%;
+  height: 994px;
+  margin: 0 auto;
+  position: relative;
+  .head {
+    @extend %head;
+  }
+  .badge {
+    @include badge(url('../../source/assets/images/our-clients/hands.svg'),
+    url('../../source/assets/images/our-clients/dash.svg'),
+    url('../../source/assets/images/our-clients/dash.svg'));
+  }
+  .heading {
+    @extend %heading;
+  }
+  .description {
+    width: 350px;
+    margin: 0 auto;
+    @include descriprion($color: #363636,
+        $font-size: 20px,
+        $line-height: 27px,
+        $text-align: center);
+  }
+  .information {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    @include flex(
+        $justify: center,
+        $basis: 376px
+    );
+    &--item:not(:first-child) {
+      margin-left: 55px;
+    }
+    &--item {
+      height: 455px;
+      margin-bottom: 8%;
+      background: linear-gradient(to bottom, #fff 0%, #fff 430px);
+      .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 430px;
+          width: 100%;
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+      }
+      .comment {
+        width: 90%;
+        margin: 0 auto;
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 27px;
+        color: #959595;
+      }
+      .statistics {
+        transform: translateY(50%);
+        min-height: 54px;
+        width: 75%;
+        background: #E3B873;
+        color: #fff;
+        font-family: Yeseva One;
+        font-size: 17px;
+        line-height: 24px;
+        text-transform: uppercase;
+        @include flex($align: center);
+        .area {
+            height: 100%;
+            @include flex(
+                $align: center,
+                $justify: space-around,
+                $basis: 45%
+            );
+        }
+        .period {
+            height: 100%;
+            border-left: 1px solid #fff;
+            @include flex(
+                $align: center,
+                $justify: space-around,
+                $basis: 55%
+            );
+        }
+        .img {
+            max-width: 32px;
+            max-height: 32px;
+        }
+      }
+    }
+    &--client {
+        @include flex(
+            $align: center
+        );
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 15px;
+        .fullname {
+            width: 178px;
+            padding: 0px 20px;
+            box-sizing: border-box;
+            font-family: Yeseva One;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: #181818;
+        }
+    }
+  }
+  .form {
+    height: 445px;
+    width: 71.3%;
+    background: #181818;
+    color: #ffffff;
+    position: absolute;
+    top: 79%;
+    left: calc(50% - 36%);
+    .container {
+        box-sizing: border-box;
+        width: 60%;
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &--heading {
+        width: 60%;
+        padding: 5px 0;
+        margin: 0 auto;
+        font-family: FuturaDemiC;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    &--main {
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    &--group {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        &_name {
+            width: 45%;
+        }
+        &_phone {
+            width: 45%;
+        }
+        &_question {
+            width: 100%;
+        }
+    }
+
+    &--label {
+        @include form-label(rgba(255, 255, 255, 0.5));
+    }
+
+    &--input {
+        @include form-input(#fff, none,
+            $padding: 10px 0 10px 0);
+    }
+
+    .check {
+        @extend %checkbox;
+        width: max-content;
+        margin: 0 auto;
+        padding-bottom: 36px;
+        box-sizing: border-box;
+    }
+
+    &--btn {
+        @include btn($width: 213px,
+            $height: 51px, $font-size: 13px);
+        margin: 0 auto;
+        line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,180 @@
+.main > .feedback {
+  height: 890px;
+  width: 93%;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .stagies {
+    width: 55%;
+    height: 700px;
+    background: url(../../source/assets/images/feedback/stages.png);
+    background-size: 89% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &--item {
+      position: absolute;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      color: #fff;
+      text-align: center;
+      line-height: 42px;
+      background: #e3b873;
+
+      &::after {
+          position: absolute;
+          color: black;
+          text-align: left;
+          line-height: normal;
+          top: 25%;
+          left: 130%;
+          width: 310px;
+      }
+    }
+
+    &--item:first-child {
+        top: 17%;
+        left: 43%;
+
+        &::after {
+            top: 5%;
+            content: 'Our specialist will arrive for measurements per day
+contact, or appoint a date convenient for you';
+
+        }
+    }
+
+    &--item:nth-child(2) {
+        top: 33%;
+        right: 39%;
+
+        &::after {
+            content: "Free metering";
+        }
+    }
+
+    &--item:nth-child(3) {
+        top: 56%;
+        right: 36%;
+
+        &::after {
+            content: 'Free consultation';
+        }
+    }
+
+    &--item:last-child {
+        top: 80%;
+        right: 44%;
+
+        &::after {
+            top: 5%;
+            width: 185px;
+            white-space: pre-wrap;
+            content: 'Get a cost estimate and \A
+the timing of your future repairs';
+        }
+    }
+  }
+
+  .form-feedback {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 8%;
+    width: 34.8%;
+
+    .form {
+      width: 100%;
+      height: 509px;
+      background: #131313;
+      color: #ffffff;
+
+      .container {
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        padding: 27px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      &--heading {
+        width: 60%;
+        margin: 0 auto;
+        font-family: FuturaDemiC;
+        font-size: convertPx(20);
+        line-height: convertPx(25);
+        text-align: center;
+      }
+
+      &--main {
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &--group {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+      }
+
+      &--label {
+        @include form-label(rgba(255, 255, 255, 0.5));
+      }
+
+      &--input {
+        @include form-input(#fff, none,
+            $padding: 10px 0 10px 0);
+      }
+
+      .check {
+        @extend %checkbox;
+      }
+
+      &--btn {
+        @include btn($width: 213px,
+            $height: convertPx(51), $font-size: convertPx(13));
+        margin-left: auto;
+        line-height: convertPx(18);
+      }
+    }
+
+    .bank {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 8%;
+
+      .circle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 72px;
+          height: 72px;
+          border-radius: 50%;
+          background: #e3b873;
+          margin-right: 5%;
+      }
+
+      .text {
+          width: 60%;
+          font-family: FuturaDemiC;
+          font-size: convertPx(20);
+          line-height: convertPx(25);
+          color: #E3B873;
+      }
+    }
+  }
+}

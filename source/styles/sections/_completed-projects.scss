@@ -1,0 +1,213 @@
+.completed-projects {
+  width: 100%;
+  height: 655px;
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+
+    .description-block {
+      width: 30%;
+      height: 80%;
+    }
+
+    .text-content {
+      width: 100%;
+      height: 100%;
+      margin-left: 20.84%;
+      margin-right: 11.58%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+          font-family: Yeseva One;
+          font-size: 1.93rem;
+          line-height: 2.6rem;
+          letter-spacing: -0.07em;
+          text-transform: uppercase;
+          color: #e3b873;
+          &__img {
+            padding: 0 0 8px 30px;
+          }
+      }
+
+      .description {
+          @include descriprion();
+      }
+
+      .information {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+
+          &--item {
+              flex-basis: 50%;
+              margin-bottom: 34px;
+          }
+
+          &--text {
+              font-family: FuturaBookC;
+              font-size: 1.07rem;
+              line-height: 1.43rem;
+              color: #ffffff;
+          }
+
+          &--heading {
+              font-family: Yeseva One;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 1.43rem;
+              line-height: 1.79rem;
+              text-transform: uppercase;
+              color: #e3b873;
+          }
+      }
+
+      .slider-control {
+          display: flex;
+          justify-content: space-between;
+          width: 45%;
+
+          .arrow-img {
+              cursor: pointer;
+              &:hover {
+                  opacity: 0.5;
+              }
+          }
+
+          .circle {
+              width: 30%;
+              display: flex;
+              justify-content: space-between;
+
+              &--item {
+                  opacity: 0.3;
+                  cursor: pointer;
+                  &:hover {
+                      opacity: 1;
+                  }
+
+                  &-active {
+                      cursor: pointer;
+                  }
+              }
+          }
+      }
+    }
+
+    .wrapper-navbar {
+      display: flex;
+      margin-right: 1%;
+
+      .navbar {
+          width: 85%;
+          height: auto;
+
+          .menu {
+              display: flex;
+              justify-content: space-between;
+
+              &--item {
+                  display: inline;
+                  font-family: Yeseva One;
+                  font-size: 1rem;
+                  line-height: 1.7rem;
+                  text-transform: uppercase;
+              }
+
+              &--link {
+                  color: rgba(255, 255, 255, 0.3);
+                  padding: 5px 0;
+                  &:hover {
+                      color: azure;
+                      border-bottom: 1px solid azure;
+                  }
+              }
+
+              &--link-active {
+                  padding: 5px 0;
+                  box-sizing: border-box;
+                  color: #e3b873;
+                  border-bottom: 1px solid #e3b873;
+              }
+          }
+      }
+    }
+
+    .slider {
+      width: 56%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-content {
+          position: relative;
+          height: 82%;
+          width: 100%;
+          display: flex;
+          overflow: hidden;
+      }
+
+      &--item:first-child {
+          width: 80%;
+          height: 100%;
+          background: url("../../source/assets/images/completed-projects/project-rostov.jpg");
+          background-size: cover;
+      }
+
+      &--item:nth-child(2) {
+          position: relative;
+          width: 20%;
+          height: 100%;
+          background: url("../../source/assets/images/completed-projects/project-sochi.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          transform: translateX(21px);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+      }
+
+      &--button {
+          width: 55px;
+          height: 55px;
+          margin-left: 45px;
+          border-radius: 50%;
+          border-color: #e3b873;
+          background-color: #e3b873;
+          cursor: pointer;
+          transition: all 0.5s ease-out;
+          &:hover {
+              transform: scale(1.2);
+          }
+
+          .arrow-ellipse {
+              display: block;
+              width: 10px;
+              height: 16px;
+              margin: 0 auto;
+              text-align: center;
+          }
+      }
+    }
+
+  .slider-md {display: none;}
+
+  .button-swap {
+    @extend %button-swap;
+  }
+
+  .button-swap_left {
+    .button__img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .button-swap_right {
+    margin-left: 0;
+    margin-right: 5%;
+  }
+}

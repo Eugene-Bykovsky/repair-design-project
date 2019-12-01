@@ -1,0 +1,616 @@
+@media (max-width: 1050px) {
+  html {
+    font-size: 13px;
+  }
+
+  .header,
+  .footer {
+    .wrapper-header>.feedback {
+      margin-right: 10px;
+    }
+    .feedback {
+      margin: 0;
+      width: auto;
+      justify-content: flex-end;
+    }
+  }
+
+  .offer {
+    height: 550px;
+    .content {
+      width: 100%;
+      margin: 0 auto;
+
+      &__wrapper {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .heading {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 1.5rem;
+    }
+
+    .scroll-down__link {
+      margin-right: 5px;
+    }
+  }
+
+  .completed-projects {
+    height: 611px;
+
+    .text-content {
+      margin-left: 10%;
+    }
+
+    .wrapper-navbar {
+      .navbar {
+        width: 100%;
+      }
+    }
+
+    .slider {
+      width: 60%;
+
+      &--item {
+        &:first-child {
+          width: 76%;
+        }
+      }
+    }
+  }
+
+  .online-control {
+
+    .head {
+      height: 35%;
+      padding-top: 70px;
+    }
+
+    .video {
+      transform: translateY(22%);
+      height: 105%;
+      width: 70%;
+    }
+
+    .separator {
+      margin-top: 20%;
+    }
+
+    .form-access {
+      width: 85%;
+    }
+  }
+
+  .types-of-repair {
+    height: 1412px;
+
+    .information {
+      margin-top: 7%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      &--item {
+        flex-basis: 45%;
+        margin-bottom: 8%;
+      }
+    }
+  }
+
+  .main>.feedback {
+    width: 100%;
+
+    .form-feedback {
+      margin-top: 12%;
+    }
+  }
+
+  .design-project {
+    height: 1600px;
+
+    .information {
+      margin-top: 7%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      &--item {
+        flex-basis: 45%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        background: linear-gradient(to bottom, transparent 0%, transparent 421px, transparent 421px, transparent 100%);
+
+        .content {
+          height: max-content;
+        }
+      }
+    }
+  }
+
+  .our-team {
+    height: 1360px;
+
+    .information {
+      width: 90%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-left: 30px;
+      &--item {
+        flex-basis: 300px;
+      }
+    }
+  }
+
+  .our-clients {
+    height: 1550px;
+
+    .information {
+      flex-wrap: wrap;
+
+      &--item {
+        flex-basis: 45%;
+      }
+    }
+
+    .form {
+      width: 71.3%;
+      .container {
+        width: 80%;
+      }
+    }
+  }
+
+  .contact-info {
+    .info {
+      padding-top: 110px;
+    }
+
+    .map {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+
+  .header,
+  .footer {
+    .wrapper-header>.feedback {
+      width: auto;
+    }
+  }
+
+  .offer {
+    .content .wrapper-content {
+      width: 55%;
+    }
+  }
+
+  .completed-projects {
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+
+    .description-block {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .text-content {
+      margin: 0;
+      align-items: center;
+
+      .title {
+        margin-bottom: 30px;
+        &__img {
+          display: none;
+        }
+      }
+
+      .description {
+        text-align: center;
+        width: 90%;
+      }
+
+      .slider-control {
+        display: none;
+      }
+    }
+
+    .slider {
+      display: none;
+    }
+
+    .slider-md {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: url('../../source/assets/images/completed-projects/slider_md.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .online-control {
+    height: auto;
+    background: #131313;
+    .head {
+      padding-top: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .video {
+      height: 350px;
+      width: 100%;
+      transform: none;
+    }
+
+    .head .badge {
+      margin-bottom: 50px;
+    }
+
+    .description {
+      color: white;
+      width: 90%;
+    }
+
+    .separator {
+      margin-top: 30px;
+    }
+
+    .form-access {
+      width: 90%;
+      margin-top: 55px;
+      .wrapper-form {
+        flex-direction: column;
+        height: 310px;
+      }
+
+      &--item {
+        width: 95%;
+      }
+
+      &--label {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &--input {
+        color: white;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+      &--check {
+        order: 3;
+        color: #fff;
+      }
+
+      &--button {
+        order: 4;
+        transform: translateY(50%);
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .our-team {
+      height: auto;
+  }
+
+  .main>.feedback {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .header,
+  .footer {
+    .header__wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      display: none;
+    }
+  }
+
+  .offer {
+
+    .instagram-wrapper,
+    .scroll-down {
+      display: none;
+    }
+  }
+
+  .styles {
+    height: 500px;
+    margin: 0 auto;
+    background: none;
+
+    .wrapper-styles {
+      display: block;
+      width: 90%;
+    }
+
+    .title {
+      width: 100%;
+    }
+
+    .text-content {
+      height: auto;
+      justify-content: flex-start;
+      text-align: center;
+    }
+
+    .slider-md {
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url('../../source/assets/images/styles/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .wrapper-styles {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .images,
+    .list {
+      display: none;
+    }
+  }
+
+  .types-of-repair {
+    height: auto;
+    width: 90%;
+    .head {
+      margin-top: 80px;
+    }
+    .information {
+      height: auto;
+      &--item {
+        flex-basis: auto;
+        min-width: 340px;
+        height: 540px;
+        justify-content: left;
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .design-project {
+    height: auto;
+    .wrapper-design-project {
+      width: 90%;
+    }
+    .head {
+      height: 200px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .information {
+      height: auto;
+      &--item {
+        width: 70%;
+        min-width: 340px;
+        height: 450px;
+        justify-content: left;
+        margin: 0;
+        margin-bottom: 80px;
+        align-items: flex-end;
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+    .content {
+      transform: none;
+    }
+  }
+  .how-it-works {
+    display: none;
+  }
+  .our-team {
+    .information {
+      height: auto;
+      margin-bottom: 80px;
+      &--item {
+        height: 450px;
+        width: 70%;
+        flex-basis: auto;
+      }
+    }
+    .separator, .summary {
+      display: none;
+    }
+  }
+
+  .our-clients {
+    height: auto;
+    width: 100%;
+    .form {
+      width: 100%;
+      position: relative;
+      top: auto;
+      left: auto;
+      &--group {
+        width: 100%;
+      }
+      &--heading {
+        text-transform: uppercase;
+        width: 100%;
+      }
+      &--main {
+        flex-direction: column;
+        padding-top: 0;
+      }
+      &--btn {
+        width: 100%;
+      }
+      .container {
+        width: 90%;
+        padding: 0;
+      }
+      .check {
+        width: 100%;
+      }
+    }
+    .head, .information {
+      display: none;
+    }
+  }
+
+  .contact-info {
+    height: auto;
+    .info {
+      padding: 0;
+      order: 2;
+      max-width: 80%;
+    }
+    .icons {
+      order: 3;
+    }
+    .map {
+      order: 1;
+      height: 255px;
+      width: 90%;
+      margin: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    .feedback {
+      .phone-number {
+        width: auto;
+        color: #fff;
+        text-decoration-line: none;
+      }
+      .btn {
+        display: none;
+      }
+    }
+  }
+  .offer {
+    height: 476px;
+    .content__wrapper {
+      height: 330px;
+      justify-content: space-between;
+    }
+    .heading {
+      height: 50px;
+      font-size: 23px;
+      line-height: 31px;
+    }
+    .description {
+      width: 100%;
+      height: 91px;
+      line-height: 24px;
+    }
+    .wrapper-btn {
+      width: 100%;
+      height: 128px;
+      flex-wrap: wrap;
+      .calculate-btn, .submit-btn {
+        width: 100%;
+        height: 51px;
+      }
+    }
+  }
+  .completed-projects {
+    height: 700px;
+    .description-block {
+      height: auto;
+    }
+    .text-content {
+      .title {
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .description {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .information {
+        &--heading {
+          font-size: 14px;
+          line-height: 19px;
+        }
+        &--text {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+    }
+    .slider-md {
+      height: 282px;
+    }
+  }
+  .online-control {
+    .video {
+      height: 207px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .form-access--check {
+      margin-top: 0;
+      transform: translateY(-20px);
+    }
+    .form-access--button {
+      width: 100%;
+    }
+  }
+  .styles {
+    height: auto;
+    padding-bottom: 40px;
+    background: linear-gradient(to top, #131313 0%, #131313 160px, #fff 49px, #fff 100%);
+    .slider-md {
+      height: 242px;
+    }
+  }
+  .design-project {
+    background: #131313;
+    .head {
+      color: #fff;
+    }
+    .description {
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+  .our-team {
+    background: #131313;
+  }
+  .contact-info {
+    background: #252525;
+  }
+  .footer {
+    display: none;
+  }
+}
