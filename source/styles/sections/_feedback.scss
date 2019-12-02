@@ -1,4 +1,4 @@
-.main > .feedback {
+.main>.feedback {
   height: 890px;
   width: 93%;
   margin-right: auto;
@@ -26,57 +26,58 @@
       background: #e3b873;
 
       &::after {
-          position: absolute;
-          color: black;
-          text-align: left;
-          line-height: normal;
-          top: 25%;
-          left: 130%;
-          width: 310px;
+        position: absolute;
+        color: black;
+        text-align: left;
+        line-height: normal;
+        top: 25%;
+        left: 130%;
+        width: 310px;
       }
     }
 
     &--item:first-child {
-        top: 17%;
-        left: 43%;
+      top: 17%;
+      left: 43%;
 
-        &::after {
-            top: 5%;
-            content: 'Our specialist will arrive for measurements per day
+      &::after {
+        top: 5%;
+        content: 'Our specialist will arrive for measurements per day
 contact, or appoint a date convenient for you';
 
-        }
+      }
     }
 
     &--item:nth-child(2) {
-        top: 33%;
-        right: 39%;
+      top: 33%;
+      right: 39%;
 
-        &::after {
-            content: "Free metering";
-        }
+      &::after {
+        content: "Free metering";
+      }
     }
 
     &--item:nth-child(3) {
-        top: 56%;
-        right: 36%;
+      top: 56%;
+      right: 36%;
 
-        &::after {
-            content: 'Free consultation';
-        }
+      &::after {
+        content: 'Free consultation';
+      }
     }
 
     &--item:last-child {
-        top: 80%;
-        right: 44%;
+      top: 80%;
+      right: 44%;
 
-        &::after {
-            top: 5%;
-            width: 185px;
-            white-space: pre-wrap;
-            content: 'Get a cost estimate and \A
+      &::after {
+        top: 5%;
+        width: 185px;
+        white-space: pre-wrap;
+        content: 'Get a cost estimate and \A
 the timing of your future repairs';
-        }
+
+      }
     }
   }
 
@@ -134,7 +135,7 @@ the timing of your future repairs';
 
       &--input {
         @include form-input(#fff, none,
-            $padding: 10px 0 10px 0);
+          $padding: 10px 0 10px 0);
       }
 
       .check {
@@ -143,7 +144,7 @@ the timing of your future repairs';
 
       &--btn {
         @include btn($width: 213px,
-            $height: convertPx(51), $font-size: convertPx(13));
+          $height: convertPx(51), $font-size: convertPx(13));
         margin-left: auto;
         line-height: convertPx(18);
       }
@@ -158,22 +159,22 @@ the timing of your future repairs';
       margin-top: 8%;
 
       .circle {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 72px;
-          height: 72px;
-          border-radius: 50%;
-          background: #e3b873;
-          margin-right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: #e3b873;
+        margin-right: 5%;
       }
 
       .text {
-          width: 60%;
-          font-family: FuturaDemiC;
-          font-size: convertPx(20);
-          line-height: convertPx(25);
-          color: #E3B873;
+        width: 60%;
+        font-family: FuturaDemiC;
+        font-size: convertPx(20);
+        line-height: convertPx(25);
+        color: #E3B873;
       }
     }
   }

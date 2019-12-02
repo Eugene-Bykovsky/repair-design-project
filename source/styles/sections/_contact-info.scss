@@ -3,11 +3,10 @@
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../source/assets/images/contact-info/back.jpg');
   background-size: cover;
-  @include flex(
-    $direction: column,
+  @include flex($direction: column,
     $align: center,
-    $justify: center
-  );
+    $justify: center);
+
   .info {
     padding-top: 200px;
     max-width: 40%;
@@ -18,35 +17,36 @@
     text-transform: uppercase;
     color: #E3B873;
   }
+
   .icons {
     width: 71px;
     padding: 25px 0 35px 0;
     @include flex($justify: space-between);
   }
+
   .email {
     height: 28px;
     width: 28px;
     background: #E3B873;
     border-radius: 50%;
     transition: all 0.5s ease-out;
-    @include flex(
-      $align: center,
-      $justify: center
-    );
+    @include flex($align: center,
+      $justify: center);
+
     &:hover {
       transform: scale(1.2);
     }
   }
+
   .instagram {
     height: 28px;
     width: 28px;
     background: #E3B873;
     border-radius: 50%;
     transition: all 0.5s ease-out;
-    @include flex(
-      $align: center,
-      $justify: center
-    );
+    @include flex($align: center,
+      $justify: center);
+
     &:hover {
       transform: scale(1.2);
     }
@@ -54,8 +54,9 @@
 
   .phone-number {
     color: #E3B873;
+
     &:hover {
-        color: white;
+      color: white;
     }
   }
 

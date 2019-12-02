@@ -4,67 +4,65 @@
   background: #131313;
   position: relative;
   z-index: -1;
+
   .text-content {
     height: 610px;
-    @include flex(
-        $direction: column,
-        $justify: space-between,
-        $basis: 28%
-    );
+    @include flex($direction: column,
+      $justify: space-between,
+      $basis: 28%);
+
     .head {
       height: 110px;
-      @include flex(
-          $direction: column,
-          $justify: space-between
-      );
+      @include flex($direction: column,
+        $justify: space-between);
     }
   }
+
   .slider {
     height: 90%;
-    @include flex(
-        $direction: column,
-        $justify: flex-end,
-        $align: center,
-        $basis: 60%
-    );
+    @include flex($direction: column,
+      $justify: flex-end,
+      $align: center,
+      $basis: 60%);
+
     .list {
       width: 100%;
       height: 200px;
-      color: 	rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, 1);
       transform: translateY(-20%);
-      @include flex(
-          $justify: space-between,
+      @include flex($justify: space-between,
       );
+
       &--part {
-          width: max-content;
-          font-family: Yeseva One;
-          font-size: convertPx(15);
-          line-height: convertPx(21);
-          @include flex(
-              $direction: column,
-              $justify: space-between
-          );
-          border-bottom: 1px solid #E3B873;
-          margin-bottom: 10px;
+        width: max-content;
+        font-family: Yeseva One;
+        font-size: convertPx(15);
+        line-height: convertPx(21);
+        @include flex($direction: column,
+          $justify: space-between);
+        border-bottom: 1px solid #E3B873;
+        margin-bottom: 10px;
       }
+
       &--column {
-          height: 90%;
-          @include flex(
-              $direction: column,
-              $justify: space-between
-          );
+        height: 90%;
+        @include flex($direction: column,
+          $justify: space-between);
       }
+
       &--item {
+        width: 130px;
+        color: rgba(255, 255, 255, 0.5);
+        list-style-type: none;
+
+        &-active {
           width: 130px;
-          color: rgba(255, 255, 255, 0.5);
           list-style-type: none;
-          &-active {
-              width: 130px;
-              list-style-type: none;
-              color: rgba(255, 255, 255, 1);
-          }
+          color: rgba(255, 255, 255, 1);
+        }
       }
     }
+
     .image {
       background: url('../../source/assets/images/how-it-works/back.jpg');
       background-position: top;
@@ -74,77 +72,81 @@
       width: 95%;
     }
   }
+
   .heading {
-      padding-top: 5px;
-      box-sizing: border-box;
-      @include heading(
-          $font-family: FuturaDemiC,
-          $font-size: convertPx(15),
-          $line-height: convertPx(21),
-          $color: #fff
-      );
+    padding-top: 5px;
+    box-sizing: border-box;
+    @include heading($font-family: FuturaDemiC,
+      $font-size: convertPx(15),
+      $line-height: convertPx(21),
+      $color: #fff);
   }
+
   .title {
-      position: relative;
-      width: 100%;
-      @extend %title;
-      &--img {
-          padding: 0 0 8px 30px;
-      }
+    position: relative;
+    width: 100%;
+    @extend %title;
+
+    &--img {
+      padding: 0 0 8px 30px;
+    }
   }
+
   .description {
-      height: 323px;
-      .part {
-          margin-bottom: 10px;
-          @include heading(
-              $font-size: convertPx(18),
-              $line-height: convertPx(25),
-              $color: #fff
-          );
-      }
-      .heading {
-          margin-bottom: 20px;
-          @include heading(
-              $font-size: convertPx(15),
-              $line-height: convertPx(23),
-              $color: #E3B873
-          );
-      }
-      .text {
-          font-family: FuturaBookC;
-          font-size: convertPx(15);
-          line-height: convertPx(25);
-          color: #fff;
-      }
+    height: 323px;
+
+    .part {
+      margin-bottom: 10px;
+      @include heading($font-size: convertPx(18),
+        $line-height: convertPx(25),
+        $color: #fff);
+    }
+
+    .heading {
+      margin-bottom: 20px;
+      @include heading($font-size: convertPx(15),
+        $line-height: convertPx(23),
+        $color: #E3B873);
+    }
+
+    .text {
+      font-family: FuturaBookC;
+      font-size: convertPx(15);
+      line-height: convertPx(25);
+      color: #fff;
+    }
   }
+
   .slider-control {
-      width: 95%;
-      @include flex(
-          $justify: space-between
-      );
-      .circles {
-          width: 50%;
-          @include flex(
-              $justify: space-between
-          );
+    width: 95%;
+    @include flex($justify: space-between);
+
+    .circles {
+      width: 50%;
+      @include flex($justify: space-between);
+    }
+
+    .circle {
+      opacity: 0.3;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
       }
-      .circle {
-          opacity: 0.3;
-          cursor: pointer;
-          &:hover {
-              opacity: 1;
-          }
-          &-active {
-              opacity: 1;
-          }
-          
+
+      &-active {
+        opacity: 1;
       }
-      .arrow-img {
-          cursor: pointer;
-          &:hover {
-              opacity: 0.5;
-          }
+
+    }
+
+    .arrow-img {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
       }
+    }
   }
 }
 

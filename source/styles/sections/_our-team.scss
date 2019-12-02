@@ -2,126 +2,132 @@
   height: 920px;
   background: linear-gradient(to bottom, rgba(19, 19, 19, 1) 0%, rgba(19, 19, 19, 1) 403px, #fff 403px, #fff 100%);
   @include flex($direction: column,
-      $align: center,
-      );
+    $align: center,
+  );
+
   .head {
-      @extend %head;
-      color: #fff;
+    @extend %head;
+    color: #fff;
   }
+
   .heading {
-      @extend %heading;
-      color: #fff;
+    @extend %heading;
+    color: #fff;
   }
+
   .badge {
-      @include badge(url('../../source/assets/images/our-team/team.svg'),
-          url('../../source/assets/images/our-team/dash.svg'),
-          url('../../source/assets/images/our-team/dash.svg'));
+    @include badge(url('../../source/assets/images/our-team/team.svg'),
+      url('../../source/assets/images/our-team/dash.svg'),
+      url('../../source/assets/images/our-team/dash.svg'));
   }
+
   .description {
-      max-width: 440px;
-      @include descriprion($color: #fff,
-          $font-size: convertPx(20),
-          $line-height: convertPx(27),
-          $text-align: center);
+    max-width: 440px;
+    @include descriprion($color: #fff,
+      $font-size: convertPx(20),
+      $line-height: convertPx(27),
+      $text-align: center);
   }
+
   .information {
-      width: 82%;
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 80px;
+    @include flex($justify: space-between,
+
+    );
+
+    &--item {
+      min-width: 304px;
+
+      &_dmitry {
+        background: url('../../source/assets/images/our-team/dmitry-tulyakov.jpg') no-repeat;
+      }
+
+      &_larisa {
+        background: url('../../source/assets/images/our-team/larisa-kotlyarova.jpg') no-repeat;
+      }
+
+      &_alexey {
+        background: url('../../source/assets/images/our-team/alexey-efimov.jpg') no-repeat;
+      }
+    }
+
+    &--item {
+      height: 358px;
+      flex-basis: 272px;
+      margin-bottom: 13%;
+      background-position: center;
+      background-size: contain;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .logo {
+        width: 70px;
+        height: 70px;
+        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+        background-color: #E3B873;
+        transform: translate(-50%, -50%);
+        @include flex($justify: center,
+          $align: center);
+      }
+
+    }
+
+    &--staff {
+      width: 68%;
       margin: 0 auto;
-      margin-top: 80px;
-      @include flex(
-          $justify: space-between,
-          
-      );
+      transform: translateY(44%);
+      @include flex($direction: column,
+        $align: center);
+    }
 
-      &--item {
-          min-width: 304px;
-          &_dmitry {
-              background: url('../../source/assets/images/our-team/dmitry-tulyakov.jpg') no-repeat;
-          }
+    &--worker {
+      height: 93px;
+      width: 100%;
+      text-align: center;
+      background: #fff;
+      @include flex($direction: column,
+        $justify: center);
+    }
 
-          &_larisa {
-              background: url('../../source/assets/images/our-team/larisa-kotlyarova.jpg') no-repeat;
-          }
+    &--fullname {
+      font-family: Yeseva One;
+      font-size: convertPx(18);
+      line-height: convertPx(25);
+      text-align: center;
+      color: #181818;
+    }
 
-          &_alexey {
-              background: url('../../source/assets/images/our-team/alexey-efimov.jpg') no-repeat;
-          }
-      }
+    &--profession {
+      font-family: FuturaBookC;
+      font-size: convertPx(18);
+      line-height: convertPx(26);
+      text-align: center;
+      color: #959595;
+    }
 
-      &--item {
-        height: 358px;
-        flex-basis: 272px;
-        margin-bottom: 13%;
-        background-position: center;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .logo {
-            width: 70px;
-            height: 70px;
-            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
-            background-color: #E3B873;
-            transform: translate(-50%, -50%);
-            @include flex(
-                $justify: center,
-                $align: center
-            );
-        }
-      
-      }
-      
-      &--staff {
-          width: 68%;
-          margin: 0 auto;
-          transform: translateY(44%);
-          @include flex(
-              $direction: column,
-              $align: center
-          );
-      }
-      &--worker {
-          height: 93px;
-          width: 100%;
-          text-align: center;
-          background: #fff;
-          @include flex(
-              $direction: column,
-              $justify: center
-          );
-      }
-      &--fullname {
-          font-family: Yeseva One;
-          font-size: convertPx(18);
-          line-height: convertPx(25);
-          text-align: center;
-          color: #181818;
-      }
-      &--profession {
-          font-family: FuturaBookC;
-          font-size: convertPx(18);
-          line-height: convertPx(26);
-          text-align: center;
-          color: #959595;
-      }
-      &--experience {
-          height: 44px;
-          width: 100%;
-          background: #E3B873;
-          font-family: Yeseva One;
-          font-size: convertPx(13);
-          line-height: convertPx(20);
-          text-align: center;
-          text-transform: uppercase;
-          color: #FFFFFF;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
+    &--experience {
+      height: 44px;
+      width: 100%;
+      background: #E3B873;
+      font-family: Yeseva One;
+      font-size: convertPx(13);
+      line-height: convertPx(20);
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
+
   .separator {
     margin-bottom: 10px;
   }
+
   .summary {
     font-family: FuturaBookC;
     font-size: convertPx(20);

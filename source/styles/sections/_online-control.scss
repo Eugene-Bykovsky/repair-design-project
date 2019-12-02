@@ -3,28 +3,28 @@
   width: 100%;
 
   .head {
-      height: 36.32%;
-      background: #131313;
-      text-align: center;
-      padding-top: 80px;
-      position: relative;
-      box-sizing: border-box;
+    height: 36.32%;
+    background: #131313;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    box-sizing: border-box;
 
-      .heading {
-        font-family: Yeseva One;
-        font-size: convertPx(20);
-        line-height: convertPx(28);
-        text-transform: uppercase;
-        color: #fff;
-        margin-bottom: 10px;
-      }
+    .heading {
+      font-family: Yeseva One;
+      font-size: convertPx(20);
+      line-height: convertPx(28);
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 10px;
+    }
 
-      .badge {
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    .badge {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .video {
@@ -72,12 +72,12 @@
   }
 
   &--label {
-  @include form-label(rgba(54, 54, 54, 0.5));
-}
+    @include form-label(rgba(54, 54, 54, 0.5));
+  }
 
   &--input {
-  @include form-input(#363636);
-  color: #363636;
+    @include form-input(#363636);
+    color: #363636;
   }
 
   &--button {

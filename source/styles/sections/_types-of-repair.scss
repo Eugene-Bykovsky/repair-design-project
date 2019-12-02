@@ -17,8 +17,8 @@
 
   .badge {
     @include badge(url('../../source/assets/images/types-of-repair/instruments.svg'),
-        url('../../source/assets/images/types-of-repair/dash.svg'),
-        url('../../source/assets/images/types-of-repair/dash.svg'));
+      url('../../source/assets/images/types-of-repair/dash.svg'),
+      url('../../source/assets/images/types-of-repair/dash.svg'));
   }
 
   .information {
@@ -27,25 +27,30 @@
     margin-top: 25px;
     @include flex($justify: space-between,
     );
+
     &--item:not(:first-child) {
       margin-left: 30px;
     }
+
     &--item {
       &_redecorating {
         background: url("../../source/assets/images/types-of-repair/redecorating.png") no-repeat;
       }
+
       &_overhaul {
         background: url("../../source/assets/images/types-of-repair/overhaul.png") no-repeat;
       }
+
       &_designer {
         background: url("../../source/assets/images/types-of-repair/designer-repair.png") no-repeat;
       }
+
       height: 100%;
       background-size: contain;
 
       @include flex($justify: center,
-          $align: flex-end,
-          $basis: 392px);
+        $align: flex-end,
+        $basis: 392px);
     }
   }
 
@@ -53,7 +58,7 @@
     width: 85%;
     height: auto;
     @include flex($direction: column,
-        $justify: space-between,
+      $justify: space-between,
     );
     box-sizing: border-box;
     padding-top: 20px;
@@ -70,40 +75,39 @@
     }
 
     .list {
-        width: 75%;
-        height: 178px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        flex-grow: 10;
+      width: 75%;
+      height: 178px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      flex-grow: 10;
 
-        &--item {
-            list-style-type: none;
-            position: relative;
-            color: #959595;
-            font-family: FuturaBookC;
-            font-size: convertPx(15);
-            line-height: convertPx(25);
-        }
+      &--item {
+        list-style-type: none;
+        position: relative;
+        color: #959595;
+        font-family: FuturaBookC;
+        font-size: convertPx(15);
+        line-height: convertPx(25);
+      }
 
-        &--item::before {
-            content: "";
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background: #959595;
-            position: absolute;
-            top: 40%;
-            right: 102%;
-        }
+      &--item::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #959595;
+        position: absolute;
+        top: 40%;
+        right: 102%;
+      }
     }
 
     .btn {
       @include btn ($width: 70%,
-          $height: 54px,
-          $font-family: Yeseva One,
-          $font-size: convertPx(18),
-          $line-height: convertPx(25)
-      );
+        $height: 54px,
+        $font-family: Yeseva One,
+        $font-size: convertPx(18),
+        $line-height: convertPx(25));
     }
   }
 }
