@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../.././source/assets/fonts/FuturaBookC/FuturaBookC.eot");
+  src: url("../.././source/assets/fonts/FuturaBookC/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../.././source/assets/fonts/FuturaBookC/FuturaBookC.woff2") format("woff2"), url("../.././source/assets/fonts/FuturaBookC/FuturaBookC.woff") format("woff"), url("../.././source/assets/fonts/FuturaBookC/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../.././source/assets/fonts/FuturaDemiC/FuturaDemiC.eot");
+  src: url("../.././source/assets/fonts/FuturaDemiC/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../.././source/assets/fonts/FuturaDemiC/FuturaDemiC.woff2") format("woff2"), url("../.././source/assets/fonts/FuturaDemiC/FuturaDemiC.woff") format("woff"), url("../.././source/assets/fonts/FuturaDemiC/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url("../.././source/assets/fonts/FuturaMediumC/FuturaMediumC.eot");
+  src: url("../.././source/assets/fonts/FuturaMediumC/FuturaMediumC.eot?#iefix") format("embedded-opentype"), url("../.././source/assets/fonts/FuturaMediumC/FuturaMediumC.woff2") format("woff2"), url("../.././source/assets/fonts/FuturaMediumC/FuturaMediumC.woff") format("woff"), url("../.././source/assets/fonts/FuturaMediumC/FuturaMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../.././source/assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+  src: url("../.././source/assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../.././source/assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("../.././source/assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../.././source/assets/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../.././source/assets/fonts/YesevaOne/YesevaOne.eot");
+  src: url("../.././source/assets/fonts/YesevaOne/YesevaOne.eot?#iefix") format("embedded-opentype"), url("../.././source/assets/fonts/YesevaOne/YesevaOne.woff2") format("woff2"), url("../.././source/assets/fonts/YesevaOne/YesevaOne.woff") format("woff"), url("../.././source/assets/fonts/YesevaOne/YesevaOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

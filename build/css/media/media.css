@@ -1,0 +1,383 @@
+@media (max-width: 1050px) {
+  html {
+    font-size: 13px; }
+  .header .wrapper-header > .feedback,
+  .footer .wrapper-header > .feedback {
+    margin-right: 10px; }
+  .header .feedback,
+  .footer .feedback {
+    margin: 0;
+    width: auto;
+    justify-content: flex-end; }
+  .offer {
+    height: 550px; }
+    .offer .content {
+      width: 100%;
+      margin: 0 auto; }
+      .offer .content__wrapper {
+        width: 90%;
+        margin: 0 auto; }
+    .offer .heading {
+      font-size: 2rem; }
+    .offer .description {
+      font-size: 1.5rem; }
+    .offer .scroll-down__link {
+      margin-right: 5px; }
+  .completed-projects {
+    height: 611px; }
+    .completed-projects .text-content {
+      margin-left: 10%; }
+    .completed-projects .wrapper-navbar .navbar {
+      width: 100%; }
+    .completed-projects .slider {
+      width: 60%; }
+      .completed-projects .slider--item:first-child {
+        width: 76%; }
+  .online-control .head {
+    height: 35%;
+    padding-top: 70px; }
+  .online-control .video {
+    transform: translateY(22%);
+    height: 105%;
+    width: 70%; }
+  .online-control .separator {
+    margin-top: 20%; }
+  .online-control .form-access {
+    width: 85%; }
+  .types-of-repair {
+    height: 1412px; }
+    .types-of-repair .information {
+      margin-top: 7%;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .types-of-repair .information--item {
+        flex-basis: 45%;
+        margin-bottom: 8%; }
+  .main > .feedback {
+    width: 100%; }
+    .main > .feedback .form-feedback {
+      margin-top: 12%; }
+  .design-project {
+    height: 1600px; }
+    .design-project .information {
+      margin-top: 7%;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .design-project .information--item {
+        flex-basis: 45%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        background: linear-gradient(to bottom, transparent 0%, transparent 421px, transparent 421px, transparent 100%); }
+        .design-project .information--item .content {
+          height: max-content; }
+  .our-team {
+    height: 1360px; }
+    .our-team .information {
+      width: 90%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-left: 30px; }
+      .our-team .information--item {
+        flex-basis: 300px; }
+  .our-clients {
+    height: 1550px; }
+    .our-clients .information {
+      flex-wrap: wrap; }
+      .our-clients .information--item {
+        flex-basis: 45%; }
+    .our-clients .form {
+      width: 71.3%; }
+      .our-clients .form .container {
+        width: 80%; }
+  .contact-info .info {
+    padding-top: 110px; }
+  .contact-info .map {
+    width: 80%; } }
+
+@media (max-width: 830px) {
+  .header .wrapper-header > .feedback,
+  .footer .wrapper-header > .feedback {
+    width: auto; }
+  .offer .content .wrapper-content {
+    width: 55%; }
+  .completed-projects {
+    justify-content: center;
+    align-items: center;
+    height: 1000px; }
+    .completed-projects .description-block {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 14px; }
+    .completed-projects .text-content {
+      margin: 0;
+      align-items: center; }
+      .completed-projects .text-content .title {
+        margin-bottom: 30px; }
+        .completed-projects .text-content .title__img {
+          display: none; }
+      .completed-projects .text-content .description {
+        text-align: center;
+        width: 90%; }
+      .completed-projects .text-content .slider-control {
+        display: none; }
+    .completed-projects .slider {
+      display: none; }
+    .completed-projects .slider-md {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: url("../../source/assets/images/completed-projects/slider_md.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+  .online-control {
+    height: auto;
+    background: #131313; }
+    .online-control .head {
+      padding-top: 0;
+      width: 90%;
+      margin: 0 auto; }
+    .online-control .video {
+      height: 350px;
+      width: 100%;
+      transform: none; }
+    .online-control .head .badge {
+      margin-bottom: 50px; }
+    .online-control .description {
+      color: white;
+      width: 90%; }
+    .online-control .separator {
+      margin-top: 30px; }
+    .online-control .form-access {
+      width: 90%;
+      margin-top: 55px; }
+      .online-control .form-access .wrapper-form {
+        flex-direction: column;
+        height: 310px; }
+      .online-control .form-access--item {
+        width: 95%; }
+      .online-control .form-access--label {
+        color: rgba(255, 255, 255, 0.5); }
+      .online-control .form-access--input {
+        color: white; }
+        .online-control .form-access--input::placeholder {
+          color: white; }
+      .online-control .form-access--check {
+        order: 3;
+        color: #fff; }
+      .online-control .form-access--button {
+        order: 4;
+        transform: translateY(50%);
+        margin: 0 auto; }
+  .our-team {
+    height: auto; }
+  .main > .feedback {
+    display: none; } }
+
+@media (max-width: 720px) {
+  .header .header__wrapper,
+  .footer .header__wrapper {
+    width: 90%;
+    margin: 0 auto; }
+  .header .navbar,
+  .footer .navbar {
+    display: none; }
+  .offer .instagram-wrapper,
+  .offer .scroll-down {
+    display: none; }
+  .styles {
+    height: 500px;
+    margin: 0 auto;
+    background: none; }
+    .styles .wrapper-styles {
+      display: block;
+      width: 90%; }
+    .styles .title {
+      width: 100%; }
+    .styles .text-content {
+      height: auto;
+      justify-content: flex-start;
+      text-align: center; }
+    .styles .slider-md {
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url("../../source/assets/images/styles/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .styles .wrapper-styles {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+    .styles .images,
+    .styles .list {
+      display: none; }
+  .types-of-repair {
+    height: auto;
+    width: 90%; }
+    .types-of-repair .head {
+      margin-top: 80px; }
+    .types-of-repair .information {
+      height: auto; }
+      .types-of-repair .information--item {
+        flex-basis: auto;
+        min-width: 340px;
+        height: 540px;
+        justify-content: left; }
+        .types-of-repair .information--item:not(:first-child) {
+          margin-left: 0; }
+  .design-project {
+    height: auto; }
+    .design-project .wrapper-design-project {
+      width: 90%; }
+    .design-project .head {
+      height: 200px;
+      width: 80%;
+      margin: 0 auto; }
+    .design-project .information {
+      height: auto; }
+      .design-project .information--item {
+        width: 70%;
+        min-width: 340px;
+        height: 450px;
+        justify-content: left;
+        margin: 0;
+        margin-bottom: 80px;
+        align-items: flex-end; }
+        .design-project .information--item:not(:first-child) {
+          margin-left: 0; }
+    .design-project .content {
+      transform: none; }
+  .how-it-works {
+    display: none; }
+  .our-team .information {
+    height: auto;
+    margin-bottom: 80px; }
+    .our-team .information--item {
+      height: 450px;
+      width: 70%;
+      flex-basis: auto; }
+  .our-team .separator, .our-team .summary {
+    display: none; }
+  .our-clients {
+    height: auto;
+    width: 100%; }
+    .our-clients .form {
+      width: 100%;
+      position: relative;
+      top: auto;
+      left: auto; }
+      .our-clients .form--group {
+        width: 100%; }
+      .our-clients .form--heading {
+        text-transform: uppercase;
+        width: 100%; }
+      .our-clients .form--main {
+        flex-direction: column;
+        padding-top: 0; }
+      .our-clients .form--btn {
+        width: 100%; }
+      .our-clients .form .container {
+        width: 90%;
+        padding: 0; }
+      .our-clients .form .check {
+        width: 100%; }
+    .our-clients .head, .our-clients .information {
+      display: none; }
+  .contact-info {
+    height: auto; }
+    .contact-info .info {
+      padding: 0;
+      order: 2;
+      max-width: 80%; }
+    .contact-info .icons {
+      order: 3; }
+    .contact-info .map {
+      order: 1;
+      height: 255px;
+      width: 90%;
+      margin: 50px 0; } }
+
+@media (max-width: 375px) {
+  .header .feedback .phone-number {
+    width: auto;
+    color: #fff;
+    text-decoration-line: none; }
+  .header .feedback .btn {
+    display: none; }
+  .offer {
+    height: 476px; }
+    .offer .content__wrapper {
+      height: 330px;
+      justify-content: space-between; }
+    .offer .heading {
+      height: 50px;
+      font-size: 23px;
+      line-height: 31px; }
+    .offer .description {
+      width: 100%;
+      height: 91px;
+      line-height: 24px; }
+    .offer .wrapper-btn {
+      width: 100%;
+      height: 128px;
+      flex-wrap: wrap; }
+      .offer .wrapper-btn .calculate-btn, .offer .wrapper-btn .submit-btn {
+        width: 100%;
+        height: 51px; }
+  .completed-projects {
+    height: 700px; }
+    .completed-projects .description-block {
+      height: auto; }
+    .completed-projects .text-content .title {
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center; }
+    .completed-projects .text-content .description {
+      font-size: 14px;
+      line-height: 22px; }
+    .completed-projects .text-content .information--heading {
+      font-size: 14px;
+      line-height: 19px; }
+    .completed-projects .text-content .information--text {
+      font-size: 14px;
+      line-height: 19px; }
+    .completed-projects .slider-md {
+      height: 282px; }
+  .online-control .video {
+    height: 207px; }
+  .online-control .description {
+    font-size: 14px;
+    line-height: 24px; }
+  .online-control .form-access--check {
+    margin-top: 0;
+    transform: translateY(-20px); }
+  .online-control .form-access--button {
+    width: 100%; }
+  .styles {
+    height: auto;
+    padding-bottom: 40px;
+    background: linear-gradient(to top, #131313 0%, #131313 160px, #fff 49px, #fff 100%); }
+    .styles .slider-md {
+      height: 242px; }
+  .design-project {
+    background: #131313; }
+    .design-project .head {
+      color: #fff; }
+    .design-project .description {
+      font-size: 15px;
+      color: #fff; }
+  .our-team {
+    background: #131313; }
+  .contact-info {
+    background: #252525; }
+  .footer {
+    display: none; } }
